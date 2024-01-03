@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(35deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 53%, rgba(109, 109, 109, 0.03) 53%, rgba(109, 109, 109, 0.03) 59%, rgba(228, 228, 228, 0.03) 59%, rgba(228, 228, 228, 0.03) 66%, rgba(42, 42, 42, 0.03) 66%, rgba(42, 42, 42, 0.03) 95%, rgba(165, 165, 165, 0.03) 95%, rgba(165, 165, 165, 0.03) 100%), linear-gradient(205deg, rgba(62, 62, 62, 0.03) 0%, rgba(62, 62, 62, 0.03) 31%, rgba(200, 200, 200, 0.03) 31%, rgba(200, 200, 200, 0.03) 41%, rgba(30, 30, 30, 0.03) 41%, rgba(30, 30, 30, 0.03) 47%, rgba(151, 151, 151, 0.03) 47%, rgba(151, 151, 151, 0.03) 60%, rgba(95, 95, 95, 0.03) 60%, rgba(95, 95, 95, 0.03) 100%), linear-gradient(30deg, rgba(7, 7, 7, 0.03) 0%, rgba(7, 7, 7, 0.03) 19%, rgba(63, 63, 63, 0.03) 19%, rgba(63, 63, 63, 0.03) 33%, rgba(175, 175, 175, 0.03) 33%, rgba(175, 175, 175, 0.03) 37%, rgba(244, 244, 244, 0.03) 37%, rgba(244, 244, 244, 0.03) 60%, rgba(177, 177, 177, 0.03) 60%, rgba(177, 177, 177, 0.03) 100%), linear-gradient(90deg, rgb(162, 162, 162), rgb(229, 229, 229));
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px gray;
+    padding: 15px 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px gray;
+
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.controls {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    width: 400px;
+    /* gap: 20px; */
+    justify-content: space-around;
+    /* box-sizing: border-box; */
+}
+
+.controls p {
+    font-size: 6rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.controls span {
+    cursor: not-allowed;
+}
+
+.controls p:hover {
+    transform: scale(1.1);
+}
+
+.scoreCard {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+
+.choices {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.scoreCard span {
+
+    color: orange;
+}
+
+.choices span {
+    color: orange;
+}
+
+#result {
+    height: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 1px 1px 2px black;
+
+}
+@media screen and (max-width:570px) {
+    h1{
+        font-size: 1rem;
+    }
+    .controls{
+        width: 350px;
+        padding:5px 10px ;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .choices{
+        font-size: 1rem;
+    }
+    #result{
+        font-size: 1.5rem;
+    }
+    
+}
